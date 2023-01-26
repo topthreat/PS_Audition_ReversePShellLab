@@ -1,10 +1,10 @@
 # Introduction
-In this tutorial, we will exploit the bashrc file of a user on the target machine to gain remote access from another location. Get ready to sharpen your skills and master the art of hacking with two Ubuntu machines at your disposal - one serving as the target and the other as the attacking machine.
+In this tutorial, we will modify the bashrc file of a compromised user on the target machine to gain remote access from another location. Get ready to sharpen your skills and master the art of hacking with two Ubuntu machines at your disposal - one serving as the target and the other as the attacking machine.
 
 # Lab Requirements
 - Two Ubuntu machines
 - An SSH client
-- A user account with permission to edit the user's bashrc file on the system being targeted
+- A user account with permission to edit the user's bashrc file on the target system
 
 # Environment Setup
 - Establish a network connection between the two Ubuntu machines
