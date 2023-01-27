@@ -3,7 +3,6 @@ In this tutorial, we will modify the bashrc file of a compromised user on the ta
 
 # Lab Requirements
 - Two Ubuntu machines
-- An SSH client
 - A user account with permission to edit the user's bashrc file on the target system
 
 # Environment Setup Notes
