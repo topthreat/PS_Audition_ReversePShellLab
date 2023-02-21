@@ -8,7 +8,7 @@ Imagine this: You're in the middle of a high-stakes cyber espionage mission, and
 You'll set up an ingenious trap, one that will automatically establish an SSH connection from the victim's machine to your own every time the user logs into the system. With this technique, you'll be able to gain access to confidential information without ever being detected. It's like something straight out of a spy movie, and you can't wait to put your plan into action.
 
 # Lab Requirements
-- Two Ubuntu machines that can reach each other on the network
+- Two Ubuntu servers (22.04) that can reach each other via the network. Use the Ainstall.sh file for the attackers machine, and the Binstall.sh for the client system.
 - A user account that has permission to edit the targeted user's bashrc file on the target system
 
 # Environment Setup Notes
