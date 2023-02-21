@@ -1,10 +1,15 @@
 # Introduction
 ## In this tutorial, we will modify the bashrc file of a compromised user on the target machine to gain remote access from another location. 
-Get ready to sharpen your skills and master the art of hacking with two Ubuntu machines at your disposal - one serving as the target and the other as the attacking machine.
+Get ready to sharpen your skills and master the art of hacking with two Ubuntu machines at your disposal - one serving as the target and the other as the attacking machine. 
+
+# Scenario
+Imagine this: You're in the middle of a high-stakes cyber espionage mission, and you've just obtained a valid credential set. Your heart races with excitement as you contemplate your next move. You know exactly which server your target is likely to log into, and you have a plan to exploit that knowledge.
+
+You'll set up an ingenious trap, one that will automatically establish an SSH connection from the victim's machine to your own every time the user logs into the system. With this technique, you'll be able to gain access to confidential information without ever being detected. It's like something straight out of a spy movie, and you can't wait to put your plan into action.
 
 # Lab Requirements
-- Two Ubuntu machines
-- A user account with permission to edit the user's bashrc file on the target system
+- Two Ubuntu machines that can reach each other on the network
+- A user account that has permission to edit the targeted user's bashrc file on the target system
 
 # Environment Setup Notes
 - Establish a network connection between the two Ubuntu machines
@@ -12,7 +17,7 @@ Get ready to sharpen your skills and master the art of hacking with two Ubuntu m
 - Ensure that the attackers SSH server is running and properly configured 
 
 # Learner Instructions
-1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates a public-private key pair which will be used to unlock the target machine.
+1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates a public-private key pair which will be used to unlock the target machine. Note where the file will be saved. You will need to find this file again.
 2. Using the following command, copy the public key to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. 
 3. Keep in mind that you will need to replace **`<username>`** with the correct target username and **`<target_machine_IP>`** with IP address of the target.
 4. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
