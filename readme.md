@@ -20,7 +20,7 @@ You'll set up an ingenious trap, one that will automatically establish an SSH co
 # Learner Instructions
 1. Select the machine representing the Attacker. Opening the terminal, enter the following command: **`ssh-keygen -t rsa`** . This command generates an RSA public-private key pair which will be used to unlock the target machine.
 
-![image](https://user-images.githubusercontent.com/20422508/221691035-bc60bd53-3b8a-4d4e-a87d-5fbf3ca5ca0e.png)
+![image](https://user-images.githubusercontent.com/20422508/221713813-dfdf3c7a-8f54-4277-a7a1-00c7dc867b37.png)
 
 3. Using the following command, copy the public key to the target machine: **`ssh-copy-id <username>@<target_machine_IP>`**. 
 4. Keep in mind that you will need to replace **`<username>`** with the correct target username and **`<target_machine_IP>`** with IP address of the target. Do not enter a passphrase when asked to do so.
