@@ -29,7 +29,7 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 - Open the command prompt or Powershell on the Host system.
 - Start the Netcat listener on port 4444 with the following command:
 
-    netcat -nvlp 4444
+    `netcat -nvlp 4444`
 
 ### Host IP Address Hunt 🔍
 
