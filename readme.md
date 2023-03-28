@@ -17,7 +17,7 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
  - **Host 🏠**
 	 - Copy the setupHost.ps1 file to your desktop
 	 - Open Powershell 
-		 - Win-R - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
+		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
@@ -34,10 +34,15 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
 ### Listener Setup 🛠️ 🏠:
 
-- Open the command prompt or Powershell on the Host system.
+- Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>cmd<kbd>Enter</kbd>
 - Start the Netcat listener on port 4444 with the following command:
 
-    `netcat -nvlp 4444`
+    `nc -nvlp 4444`
+
+Note: If needed, click `Allow Access` to allow netcat to communicate on private networks.
+
+![image](https://user-images.githubusercontent.com/20422508/228391374-3bd02339-fe2d-4b43-9983-4c6868d6e3c8.png)
+
 
 ### IP Address Hunt 🎯 🔍
 
@@ -52,14 +57,23 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 - Execute the `ReverseShell.ps1` file
 - When prompted, enter the discovered Host 🏠 IP address and port (4444) 
 
+![image](https://user-images.githubusercontent.com/20422508/228391677-1aad2802-e130-47c8-8c86-9709356159e5.png)
+
+![image](https://user-images.githubusercontent.com/20422508/228391620-ea211d81-ba5e-4562-9d73-b6a7bc6e6a01.png)
+
 ### Taking Control 💪
 - On the Host 🏠 system, watch as the connection is established.
 - Now, you can type commands into the Host's 🏠 command prompt, and watch as they are executed on the Target 🎯 system.
 - Try some commands such as `dir`, `whoami` or `ipconfig` 
 - To gracefully end the reverse shell session, type `exit` into the Host's command prompt and press <kbd>Enter</kbd>.
 
+![image](https://user-images.githubusercontent.com/20422508/228391844-a4ab9756-7ba6-4a7a-bbda-339abb3ddf70.png)
+
+![image](https://user-images.githubusercontent.com/20422508/228391880-27d9364e-6798-4c09-8c51-552c7eb4438b.png)
+
+
 ### Going the Distance :runner:
-At this point, review the powershell scripts and try to understand why things work the way they are. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? 
+At this point, review the powershell scripts and try to understand why things work the way they do. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? Could you possibly setup a scheduled task that runs the listener and one that automatically runs the reverseshell? 
 
 ### Cleaning Up 🧹
 - Close the command prompt on the Host 🏠 system.
