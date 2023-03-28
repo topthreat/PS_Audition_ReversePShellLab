@@ -21,6 +21,9 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
 			 - Browse to the directory containing the `setupHost.ps1` script
 			 - The system will reboot once the script has completed	
+<p align="center">
+![image](https://user-images.githubusercontent.com/20422508/228332569-7b2a3551-0995-42d5-a04e-90b8680296aa.png)
+</p>
 ### Instructions
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
