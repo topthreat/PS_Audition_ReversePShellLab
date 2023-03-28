@@ -6,21 +6,23 @@
 Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 
  - **Target**
+	 - Copy the setupTarget.ps1 file to your desktop
 	 - Open Powershell 
 		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
 			 - Execute the `setupTarget.ps1` script (Example: `c:\Users\Username\Desktop\setupTarget.ps1`)
-			 - The system will reboot once the script has completed
+			 - The system may reboot once the script has completed
  - **Host**
+	 - Copy the setupHost.ps1 file to your desktop
 	 - Open Powershell 
 		 - Win-R - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
 			 - Execute the `setupHost.ps1` script (Example: `c:\Users\Username\Desktop\setupHost.ps1`)
-			 - The system will reboot once the script has completed	cl
+			 - The system may reboot once the script has completed	
 
 ![image](https://user-images.githubusercontent.com/20422508/228333736-cb73b5c2-cfb4-4c58-9276-912f308bb58a.png)
 
@@ -39,12 +41,14 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
 ### Host IP Address Hunt 🔍
 
-- Open PowerShell on the Target system and unleash the `locateHost.ps1` PowerShell script to find the elusive IP address of the Host system.
-- Note down the Host IP address unveiled by the script.
+- The simplest method may be to type ipconfig into the cmd prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script.
+
+![image](https://user-images.githubusercontent.com/20422508/228348116-6da81ecf-f19d-4a3c-8141-d73109cc7305.png)
+
 
 ### Hooking Up 🎯
 - Open PowerShell on the Target system.
-- Copy and paste the sacred PowerShell script into the PowerShell console.
+- Execute the `ReverseShell.ps1` file
 - When prompted, enter the discovered Host IP address and port (4444) 
 
 ### Taking Control 💪
