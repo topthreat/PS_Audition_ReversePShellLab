@@ -8,7 +8,7 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
  - **Target 🎯**
 	 - Copy the setupTarget.ps1 file to your desktop
 	 - Open Powershell 
-		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
+		 - <kbd>Win-R</kbd> - Type `powershell` - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
