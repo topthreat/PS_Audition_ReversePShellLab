@@ -59,11 +59,12 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 - To gracefully end the reverse shell session, type `exit` into the Host's command prompt and press <kbd>Enter</kbd>.
 
 ### Going the Distance :runner:
+At this point, review the powershell scripts and try to understand why things work the way they are. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? 
 
 ### Cleaning Up 🧹
 - Close the command prompt on the Host 🏠 system.
 - Close PowerShell on the Target 🎯 system.
 
-### 🎉 Congratulations! You have successfully created a reverse shell connection between two Windows 11 systems using PowerShell and Netcat. Remember to use your newfound powers responsibly and ethically! At this point, review the powershell scripts and try to understand why things work the way they are. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? Happy Hacking!
-:SHIFT:
+### 🎉 Congratulations! You have successfully created a reverse shell connection between two Windows 11 systems using PowerShell and Netcat. Remember to use your newfound powers responsibly and ethically!
+
 
