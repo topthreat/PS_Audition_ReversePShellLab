@@ -1,14 +1,15 @@
-# 🚀 Ethical Hacking Lab - Reverse Shell Extravaganza with PowerShell and Netcat
+# 🚀 Ethical Hacking Lab - Reverse Shell with PowerShell and Netcat
 
-## Embark on an exciting adventure and create a reverse shell connection between two Windows 11 systems using the mystical powers of PowerShell and the enigmatic charm of Netcat.
+## Embark on an exciting adventure and create a reverse shell connection between two Windows 11 systems using PowerShell and NetCat.
 
-Lab Requirements:
+##Lab Requirements:
 Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
-Instructions:
+
+##Instructions:
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
-Host System Setup 🛠️:
-2.1. Open the command prompt on the Host system.
-2.2. Summon the Netcat listener on port 4444 with the incantation:
+##Host System Setup 🛠️:
+1 Open the command prompt on the Host system.
+2 Summon the Netcat listener on port 4444 with the incantation:
 yaml
 Copy code
 netcat -nvlp 4444
