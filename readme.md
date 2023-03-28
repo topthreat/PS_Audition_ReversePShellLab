@@ -1,6 +1,6 @@
 # 🚀 Ethical Hacking Lab - :computer: Reverse Shell with PowerShell and Netcat
 
-## Create a reverse shell connection using PowerShell and NetCat.
+## Create a reverse shell connection between two Windows 11 systems using PowerShell and NetCat.
 
 ### Lab Requirements
 Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
@@ -24,10 +24,10 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 ### Instructions
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
-### Host Setup 🛠️:
+### Listener Setup 🛠️:
 
-Open the command prompt on the Host system.
-Summon the Netcat listener on port 4444 with the incantation:
+- Open the command prompt or Powershell on the Host system.
+- Start the Netcat listener on port 4444 with the following command:
 
     netcat -nvlp 4444
 
@@ -42,9 +42,10 @@ Summon the Netcat listener on port 4444 with the incantation:
 - When prompted, enter the discovered Host IP address and port (4444) 
 
 ### Taking Control 💪
-- On the Host system, witness the connection established in the command prompt.
+- On the Host system, watch as the connection is established.
 - Now, you can type commands into the Host's command prompt, and watch as they are executed on the Target system.
-- To gracefully end the reverse shell session, simply type "exit" into the Host's command prompt.
+- Try some commands such as 'whoami' or 'ipconfig' 
+- To gracefully end the reverse shell session, type "exit" into the Host's command prompt.
 
 ### Cleaning Up 🧹
 - Close the command prompt on the Host system.
