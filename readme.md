@@ -5,7 +5,7 @@
 ### Lab Requirements
 Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 
- - **Target**
+ - **Target 🎯**
 	 - Copy the setupTarget.ps1 file to your desktop
 	 - Open Powershell 
 		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
@@ -14,7 +14,7 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
 			 - Execute the `setupTarget.ps1` script (Example: `c:\Users\Username\Desktop\setupTarget.ps1`)
 			 - The system may reboot once the script has completed
- - **Host**
+ - **Host 🏠**
 	 - Copy the setupHost.ps1 file to your desktop
 	 - Open Powershell 
 		 - Win-R - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
@@ -32,36 +32,38 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 ### Instructions
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
-### Listener Setup 🛠️:
+### Listener Setup 🛠️ 🏠:
 
 - Open the command prompt or Powershell on the Host system.
 - Start the Netcat listener on port 4444 with the following command:
 
     `netcat -nvlp 4444`
 
-### Host IP Address Hunt 🔍
+### IP Address Hunt 🎯 🔍
 
-- The simplest method may be to type ipconfig into the cmd prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script.
+- You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
+
+::scroll:: If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
 
 ![image](https://user-images.githubusercontent.com/20422508/228348116-6da81ecf-f19d-4a3c-8141-d73109cc7305.png)
 
-
 ### Hooking Up 🎯
-- Open PowerShell on the Target system.
+- Open PowerShell on the Target 🎯 system.
 - Execute the `ReverseShell.ps1` file
-- When prompted, enter the discovered Host IP address and port (4444) 
+- When prompted, enter the discovered Host 🏠 IP address and port (4444) 
 
 ### Taking Control 💪
-- On the Host system, watch as the connection is established.
-- Now, you can type commands into the Host's command prompt, and watch as they are executed on the Target system.
+- On the Host 🏠 system, watch as the connection is established.
+- Now, you can type commands into the Host's 🏠 command prompt, and watch as they are executed on the Target 🎯 system.
 - Try some commands such as `dir`, `whoami` or `ipconfig` 
-- To gracefully end the reverse shell session, type "exit" into the Host's command prompt.
+- To gracefully end the reverse shell session, type `exit` into the Host's command prompt and press <kbd>Enter</kbd>.
 
 ### Going the Distance :runner:
 
 ### Cleaning Up 🧹
-- Close the command prompt on the Host system.
-- Close PowerShell on the Target system.
+- Close the command prompt on the Host 🏠 system.
+- Close PowerShell on the Target 🎯 system.
 
-### 🎉 Congratulations! You have successfully created a reverse shell connection between two Windows 11 systems using PowerShell and Netcat. Remember to use your newfound powers responsibly and ethically!
+### 🎉 Congratulations! You have successfully created a reverse shell connection between two Windows 11 systems using PowerShell and Netcat. Remember to use your newfound powers responsibly and ethically! At this point, review the powershell scripts and try to understand why things work the way they are. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? Happy Hacking!
+:SHIFT:
 
