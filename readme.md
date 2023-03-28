@@ -1,6 +1,6 @@
-## 🚀 Ethical Hacking Lab - Reverse Shell Extravaganza with PowerShell and Netcat
+# 🚀 Ethical Hacking Lab - Reverse Shell Extravaganza with PowerShell and Netcat
 
-# Embark on an exciting adventure and create a reverse shell connection between two Windows 11 systems using the mystical powers of PowerShell and the enigmatic charm of Netcat.
+## Embark on an exciting adventure and create a reverse shell connection between two Windows 11 systems using the mystical powers of PowerShell and the enigmatic charm of Netcat.
 
 Lab Requirements:
 Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
