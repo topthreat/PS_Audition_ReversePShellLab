@@ -1,5 +1,4 @@
-# 🚀 Ethical Hacking Lab 🚀 
-# Reverse Shell with PowerShell and Netcat
+# 🚀 Ethical Hacking Lab - :computer: Reverse Shell with PowerShell and Netcat
 
 ## Create a reverse shell connection using PowerShell and NetCat.
 
