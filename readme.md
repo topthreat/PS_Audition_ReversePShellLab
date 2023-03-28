@@ -24,6 +24,8 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 			 - Execute the `setupHost.ps1` script (Example: `c:\Users\Username\Desktop\setupHost.ps1`)
 			 - The system may reboot once the script has completed	
 
+![image](https://user-images.githubusercontent.com/20422508/228392220-d1e7a49c-de02-43d6-88b7-1971d8d5782a.png)
+
 ![image](https://user-images.githubusercontent.com/20422508/228333736-cb73b5c2-cfb4-4c58-9276-912f308bb58a.png)
 
 ![image](https://user-images.githubusercontent.com/20422508/228340630-864d5b57-801c-4873-988e-b36b5e0fa1be.png)
