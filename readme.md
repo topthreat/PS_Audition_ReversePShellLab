@@ -34,7 +34,8 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 ### Instructions
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
-### Listener Setup 🛠️ 🏠:
+### Listener Setup 🛠️ 🏠
+The listener will await packets from any system that can reach it. Without this, you would not be able to recieve the messages sent from the target 🎯 system.
 
 - Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>cmd<kbd>Enter</kbd>
 - Start the Netcat listener on port 4444 with the following command:
@@ -55,6 +56,7 @@ Note: If needed, click `Allow Access` to allow netcat to communicate on private 
 ![image](https://user-images.githubusercontent.com/20422508/228348116-6da81ecf-f19d-4a3c-8141-d73109cc7305.png)
 
 ### Hooking Up 🎯
+To access the listener you will need to use a reverse shell. This will allow the system that you connect to remotely send commands to your system. 
 - Open PowerShell on the Target 🎯 system.
 - Execute the `ReverseShell.ps1` file
 - When prompted, enter the discovered Host 🏠 IP address and port (4444) 
@@ -64,6 +66,7 @@ Note: If needed, click `Allow Access` to allow netcat to communicate on private 
 ![image](https://user-images.githubusercontent.com/20422508/228391620-ea211d81-ba5e-4562-9d73-b6a7bc6e6a01.png)
 
 ### Taking Control 💪
+Once the connection has been established you will be able to type many different operating system commands. Keep in mind that you will be limited to the same access as the user that has initiated the reverseshell.
 - On the Host 🏠 system, watch as the connection is established.
 - Now, you can type commands into the Host's 🏠 command prompt, and watch as they are executed on the Target 🎯 system.
 - Try some commands such as `dir`, `whoami` or `ipconfig` 
