@@ -7,7 +7,7 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 
  - **Target**
 	 - Open Powershell 
-		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd>
+		 - <kbd>Win-R</kbd> - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
@@ -15,7 +15,7 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 			 - The system will reboot once the script has completed
  - **Host**
 	 - Open Powershell 
-		 - Win-R - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd>
+		 - Win-R - Type 'powershell' - <kbd>Control</kbd>-<kbd>Shift</kbd>-<kbd>Enter</kbd> then click the *Yes* button.
 		 - Enter the following at the Powershell command prompt:
 			 - `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 			 - Type 'Y' and press <kbd>Enter</kbd> to acknowledge the security concerns
