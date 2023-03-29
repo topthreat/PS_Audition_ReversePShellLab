@@ -39,6 +39,7 @@ Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. 
 - The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
 	- Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>`cmd`<kbd>Enter</kbd>
+	 ![image](https://user-images.githubusercontent.com/20422508/228397368-2f02a0b8-17a5-46d4-b4a1-ce3914093fb4.png)
 - If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
 
 ### Listener Setup 🛠️ 🏠
