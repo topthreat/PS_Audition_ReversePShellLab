@@ -70,7 +70,10 @@ Once the connection has been established you will be able to type many different
 
 
 ### Going the Distance :runner:
-At this point, review the powershell scripts and try to understand why things work the way they do. Is there anything you can do to improve the scripts slightly? Could you possibly create your own Powershell listener script instead of relying on Netcat? Could you possibly setup a scheduled task that runs the listener and one that automatically runs the reverseshell? 
+At this point, review the powershell scripts and try to understand why things work the way they do. 
+- Is there anything you can do to improve the scripts slightly? 
+- Could you possibly create your own Powershell listener script instead of relying on Netcat? 
+- Could you possibly setup a scheduled task that runs the listener and one that automatically runs the reverseshell? 
 
 ### Cleaning Up 🧹
 - Close the command prompt on the Host 🏠 system.
