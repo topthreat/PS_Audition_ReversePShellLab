@@ -74,7 +74,7 @@ function Execute-Command {
     return `$Output
 }
 
-Write-Host "Enter the target IP address:"
+Write-Host "Enter the host's IP address:"
 `$ip = Read-Host
 Write-Host "Enter the target port:"
 `$port = Read-Host
