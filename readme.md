@@ -46,7 +46,7 @@ You will need to enter the IP address of the host 🏠 so the reverse shell know
 The listener will await packets from any system that can reach it. Without this, you would not be able to recieve the messages sent from the target 🎯 system.
 
 - Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>'cmd'<kbd>Enter</kbd>
-- Start the Netcat listener on port 4444 with the following command which will start a Netcat listener on port 4444 with verbose output and no DNS resolution:
+- Start the Netcat listener on port 4444 with the following command which will start a Netcat [l]istener on [p]ort 4444 with [v]erbose output and [n]o DNS resolution:
 
     `nc -nvlp 4444`
 
