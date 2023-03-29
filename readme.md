@@ -49,9 +49,9 @@ Note: If needed, click `Allow Access` to allow netcat to communicate on private 
 
 ### IP Address Hunt 🎯 🔍
 
-- You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
+You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
 
-::scroll:: If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
+:scroll: If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
 
 ### Hooking Up 🎯
 To access the listener you will need to use a reverse shell. This will allow the system that you connect to remotely send commands to your system. 
