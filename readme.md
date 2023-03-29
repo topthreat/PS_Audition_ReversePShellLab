@@ -53,17 +53,11 @@ Note: If needed, click `Allow Access` to allow netcat to communicate on private 
 
 ::scroll:: If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
 
-![image](https://user-images.githubusercontent.com/20422508/228348116-6da81ecf-f19d-4a3c-8141-d73109cc7305.png)
-
 ### Hooking Up 🎯
 To access the listener you will need to use a reverse shell. This will allow the system that you connect to remotely send commands to your system. 
 - Open PowerShell on the Target 🎯 system.
 - Execute the `ReverseShell.ps1` file
 - When prompted, enter the discovered Host 🏠 IP address and port (4444) 
-
-![image](https://user-images.githubusercontent.com/20422508/228391677-1aad2802-e130-47c8-8c86-9709356159e5.png)
-
-![image](https://user-images.githubusercontent.com/20422508/228391620-ea211d81-ba5e-4562-9d73-b6a7bc6e6a01.png)
 
 ### Taking Control 💪
 Once the connection has been established you will be able to type many different operating system commands. Keep in mind that you will be limited to the same access as the user that has initiated the reverseshell.
@@ -72,9 +66,7 @@ Once the connection has been established you will be able to type many different
 - Try some commands such as `dir`, `whoami` or `ipconfig` 
 - To gracefully end the reverse shell session, type `exit` into the Host's command prompt and press <kbd>Enter</kbd>.
 
-![image](https://user-images.githubusercontent.com/20422508/228391844-a4ab9756-7ba6-4a7a-bbda-339abb3ddf70.png)
-
-![image](https://user-images.githubusercontent.com/20422508/228391880-27d9364e-6798-4c09-8c51-552c7eb4438b.png)
+![image](https://user-images.githubusercontent.com/20422508/228393781-033dc4fe-6dd2-4b26-99ae-4baedfa3946b.png)
 
 
 ### Going the Distance :runner:
