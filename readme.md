@@ -68,7 +68,7 @@ Once the connection has been established you will be able to type many different
 - Try some commands such as `dir`, `whoami` or `ipconfig` 
 - To gracefully end the reverse shell session, type `exit` into the Host's command prompt and press <kbd>Enter</kbd>.
 
-![image](https://user-images.githubusercontent.com/20422508/228393781-033dc4fe-6dd2-4b26-99ae-4baedfa3946b.png)
+![image](https://user-images.githubusercontent.com/20422508/228400075-cf262c97-4a13-430b-859e-8322a4fd8a70.png)
 
 
 ### Going the Distance :runner:
