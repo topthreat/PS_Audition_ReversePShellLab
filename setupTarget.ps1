@@ -76,7 +76,7 @@ function Execute-Command {
 
 Write-Host "Enter the host's IP address:"
 `$ip = Read-Host
-Write-Host "Enter the target port:"
+Write-Host "Enter the host's port:"
 `$port = Read-Host
 
 `$socket = New-Object System.Net.Sockets.TcpClient(`$ip, `$port)
