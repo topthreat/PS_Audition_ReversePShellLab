@@ -34,10 +34,17 @@ Two Windows 11 systems that share the same subnet (Target 🎯 & Host 🏠)
 ### Instructions
 Ready, Set, Go! 🏁 Ensure that both Windows 11 systems are up and running.
 
+### IP Address Hunt 🎯 🔍
+
+You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. 
+- The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
+	- Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>`cmd`<kbd>Enter</kbd>
+- If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
+
 ### Listener Setup 🛠️ 🏠
 The listener will await packets from any system that can reach it. Without this, you would not be able to recieve the messages sent from the target 🎯 system.
 
-- Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>cmd<kbd>Enter</kbd>
+- Open the command prompt on the Host 🏠 system <kbd>Win-R</kbd>'cmd'<kbd>Enter</kbd>
 - Start the Netcat listener on port 4444 with the following command:
 
     `nc -nvlp 4444`
@@ -46,11 +53,6 @@ Note: If needed, click `Allow Access` to allow netcat to communicate on private 
 
 ![image](https://user-images.githubusercontent.com/20422508/228391374-3bd02339-fe2d-4b43-9983-4c6868d6e3c8.png)
 
-### IP Address Hunt 🎯 🔍
-
-You will need to enter the IP address of the host 🏠 so the reverse shell knows where it needs to connect. 
-- The simplest method may be to type `ipconfig` into the 'cmd.exe' prompt on your Host machine. This will provide you with the IP address that you will need to use when running your reverse shell script. 
-- If you know of any other methods to get the host 🏠 IP address go for it!! This is a great place to practice your skills!
 
 ### Hooking Up 🎯
 To access the listener you will need to use a reverse shell. This will allow the system that you connect to remotely send commands to your system. 
